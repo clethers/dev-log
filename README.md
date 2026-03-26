@@ -1,29 +1,40 @@
-# dev-log
-Minimalist Markdown Developer Log Journal
+# SATURN_LOG
+**High-Performance Browser-Native Journaling for the SATURN_OS Ecosystem.**
 
-SATURN_LOG is a high-performance, browser-native journaling tool designed for the SATURN_OS ecosystem. It provides a distraction-free, split-pane environment for documenting code logic, architectural decisions, and daily milestones during your 29th year.
+SATURN_LOG is a distraction-free, split-pane Markdown editor engineered for the 29th year. It serves as a localized command center for documenting architectural logic, code milestones, and the trajectory of personal growth with zero latency.
 
-Tech Stack
-Language: Vanilla JavaScript (ES6+)
+---
 
-Parsing: Marked.js
+## Technical Stack
+* **Engine:** Vanilla JavaScript (ES6+)
+* **Markdown Engine:** Marked.js
+* **Syntax Engine:** Prism.js
+* **Persistence:** LocalStorage API (No-SQL Browser Native)
 
-Highlighting: Prism.js
+---
 
-Storage: LocalStorage API
+## Key Enhancements
+### Bi-Directional Sync
+Real-time Markdown-to-HTML rendering with a synchronized scroll interface, ensuring the preview remains locked to the editor position.
 
-Features
-Live Preview: Real-time Markdown-to-HTML rendering.
+### Zero-Loss Auto-Save
+State management that hooks into the input event, caching every keystroke to LocalStorage to prevent data loss during browser crashes or accidental refreshes.
 
-Syntax Highlighting: Professional styling for code blocks.
+### Deep Space UI (v2.0)
+A specialized design system featuring:
+* **Primary:** #0D0D0D (Deep Space Black)
+* **Accent:** #E6B325 (Saturn Gold)
+* **Typography:** Monospace-first for code integrity.
 
-Auto-Save: Persistent drafts via local browser storage.
+### Syntax Precision
+Full support for the SATURN_OS dev-stack, providing professional-grade highlighting for JavaScript, Rust, and Shell scripts.
 
-Deep Space UI: Optimized dark mode with Saturn Gold accents.
+---
 
-Structure
-index.html - Core layout and CDN integrations.
-
-app.js - State management and DOM logic.
-
-style.css - Custom "Saturn" design system.
+## Project Structure
+```text
+saturn_log/
+├── index.html   # Semantic layout and CDN entry points
+├── app.js       # State management, Event Listeners, and MD Logic
+├── style.css    # Saturn Design System and Layout Engine
+└── README.md    # Documentation
